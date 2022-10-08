@@ -121,9 +121,17 @@
                   <span
                     data-toggle-theme="dark"
                     data-act-class="pl-4"
-                    class="border rounded-full border-green-700 flex items-center cursor-pointer w-12 transition-all duration-300 ease-in-out pl-0"
+                    class="rounded-ful flex items-center cursor-pointer w-12 transition-all duration-300 ease-in-out pl-0"
+                    style="
+                      border: 1px solid var(--primary-color);
+                      border-radius: 15px;
+                    "
                   >
-                    <span class="rounded-full w-3 h-3 m-1 bg-green-700"> </span>
+                    <span
+                      class="rounded-full w-3 h-3 m-1"
+                      style="background-color: var(--primary-color)"
+                    >
+                    </span>
                   </span>
                   <i class="gg-moon" style="color: var(--heading-color)"></i>
                 </div>
@@ -185,85 +193,85 @@
     </section>
     <!-- End aboutUs -->
     <!-- feature  -->
-    <section class="feature">
+    <section class="feature" id="read">
       <div class="container">
         <div class="grids-area row">
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa-regular fa-snowflake"></span>
               <h3>
-                <a href="#">Dog Walking</a>
+                <a href="#read">Dog Walking</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa fa-cutlery"></span>
               <h3>
-                <a href="#">Healthy Meals</a>
+                <a href="#read">Healthy Meals</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa fa-sign-language"></span>
               <h3>
-                <a href="#">Pet Sitting</a>
+                <a href="#read">Pet Sitting</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa fa-sitemap"></span>
               <h3>
-                <a href="#">Dog Activities</a>
+                <a href="#read">Dog Activities</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa fa-shower"></span>
               <h3>
-                <a href="#">Pet Daycare</a>
+                <a href="#read">Pet Daycare</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
           <div class="bg-area-box col-sm-6 col-xl-4 mt-5">
             <div class="area-box">
               <span class="fa fa-user-md"></span>
               <h3>
-                <a href="#">Pet Grooming</a>
+                <a href="#read">Pet Grooming</a>
               </h3>
               <p>
                 Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
                 laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
               </p>
-              <a href="#" class="read-more">Read-more</a>
+              <a href="#read" class="read-more">Read-more</a>
             </div>
           </div>
         </div>
@@ -332,17 +340,144 @@
     <!-- End stats -->
     <!-- ourPlans  -->
     <section class="ourPlans">
-      <div class="container">
-        <div class="title">
-          <h5>Our Plans</h5>
-          <h2>Affordable Packages</h2>
+      <div class="container py-5">
+        <div class="ourPlan__bg pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
+          <div class="title ourPlans__title">
+            <h5>Our Plans</h5>
+            <h2>Affordable Packages</h2>
+          </div>
+          <div class="ourPlan__pricing-bg">
+            <!-- pricing grid 1 -->
+            <div class="pricing-gd">
+              <div class="pricing">
+                <div class="pricing-top">
+                  <h6>Free Package</h6>
+
+                  <h4><label>$</label>0<span>/month</span></h4>
+                </div>
+                <div class="pricing-bottom">
+                  <div class="pricing-bottom-bottom">
+                    <ul class="pricing-links txt-center">
+                      <li>
+                        <p class="pricing-lists">5 Dog Walk</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Vet Visit</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Pet Spa</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Free Supports</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Customer Support</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="buy-button txt-center">
+                    <a class="mybtn mybtn-style mybtn-primary" href="#buy"
+                      >Buy Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //pricing grid 1 -->
+            <!-- pricing grid 2 -->
+            <div class="pricing-gd active">
+              <div class="pricing">
+                <div class="pricing-top txt-center">
+                  <h5>Save 10%</h5>
+                  <h6>Standard Package</h6>
+
+                  <h4><label>$</label>39<span>/month</span></h4>
+                </div>
+                <div class="pricing-bottom">
+                  <div class="pricing-bottom-bottom txt-center">
+                    <ul class="pricing-links txt-center">
+                      <li>
+                        <p class="pricing-lists">5 Dog Walk</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Vet Visit</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Pet Spa</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Free Supports</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Customer Support</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="buy-button txt-center">
+                    <a class="mybtn mybtn-style mybtn-primary" href="#buy"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //pricing grid 2 -->
+            <!-- pricing grid 3 -->
+            <div class="pricing-gd">
+              <div class="pricing">
+                <div class="pricing-top txt-center">
+                  <h6>Pro Package</h6>
+
+                  <h4><label>$</label>89<span>/month</span></h4>
+                </div>
+                <div class="pricing-bottom">
+                  <div class="pricing-bottom-bottom txt-center">
+                    <ul class="pricing-links txt-center">
+                      <li>
+                        <p class="pricing-lists">5 Dog Walk</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Vet Visit</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">3 Pet Spa</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Free Supports</p>
+                      </li>
+                      <li>
+                        <p class="pricing-lists">Customer Support</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="buy-button txt-center">
+                    <a class="mybtn mybtn-style mybtn-primary" href="#buy"
+                      >Buy Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pricing grid 3 -->
+          </div>
         </div>
       </div>
     </section>
     <!-- End ourPlans -->
     <!-- pageVideo  -->
     <section class="pageVideo">
-      <div class="container"></div>
+      <div class="container">
+        <div class="title">
+          <h5>BETTER PET NUTRITION.</h5>
+          <h2>The Finest Fresh Food And All Your Pet Needs.</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
+            dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit
+            amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+            officia.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- End pageVideo -->
     <!-- timonial  -->
@@ -356,18 +491,6 @@
     </section>
     <!-- End bottom -->
     <footer></footer>
-    <!-- Jquery  -->
-
-    <!-- Back to top  -->
-
-    <!-- Countup  -->
-
-    <script src="./Assets/js/jquery.countUp.min.js"></script>
-    <script src="./Assets/js/countUp.min.js"></script>
-
-    <script>
-      $('.counter').countUp();
-    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -389,8 +512,25 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- waypoints js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Change theme  -->
     <script src=" https://cdn.jsdelivr.net/npm/theme-change@2.0.1/index.js"></script>
+
+    <!-- Back to top  -->
+
+    <!-- Countup  -->
+
+    <script src="./Assets/js/jquery.countup.js"></script>
+    <script>
+      $('.counter').countUp();
+    </script>
     <!-- My js -->
     <script src="./Assets/js/index.js"></script>
   </body>
