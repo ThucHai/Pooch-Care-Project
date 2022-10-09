@@ -19,6 +19,33 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .navbar {
+    padding: 15px 0 0;
+  }
+
+  .nav-item {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .dark-light {
+    margin: auto;
+    padding-bottom: 15px;
+  }
+
+  a.nav-link:before,
+  a.dropdown-item:before {
+    display: none;
+  }
+  .dropdown-menu {
+    font-weight: bold;
+    border: none;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 768px) {
