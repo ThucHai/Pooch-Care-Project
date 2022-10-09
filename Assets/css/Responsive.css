@@ -28,6 +28,16 @@
     text-align: center;
   }
 
+  button.navbar-toggler {
+    background-color: var(--primary-color);
+  }
+
+  .navbar-toggler-icon {
+    color: var(--heading-color);
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
   .dark-light {
     margin: auto;
     padding-bottom: 15px;
