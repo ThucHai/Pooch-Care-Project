@@ -199,7 +199,7 @@ img {
 
 .title h5 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 2em;
   letter-spacing: 1px;
@@ -833,12 +833,6 @@ footer {
   background-color: #111;
 }
 
-.footer__bg {
-}
-
-.footer__top {
-}
-
 .footer__list ul li {
   list-style: none;
   margin-bottom: 5px;
@@ -863,9 +857,6 @@ footer {
   line-height: 26px;
   font-weight: 600;
   margin-bottom: 25px;
-}
-
-.footer__main {
 }
 
 .footer__icons {
@@ -895,6 +886,42 @@ footer {
   opacity: 0.9;
 }
 /* End footer  */
+
+/* Back to top */
+
+.backtotop {
+  position: fixed;
+  background-color: var(--primary-color);
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+}
+.backtotop i {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.backtotop:hover i {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}
 
 /*-- container --*/
 .container {
