@@ -75,6 +75,19 @@ h6 {
   font-weight: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+
 /* p  */
 p {
   margin: 0;
@@ -177,7 +190,7 @@ img {
 }
 /* title  */
 .title {
-  margin: 100px auto;
+  margin: 0 auto 100px;
   max-width: 700px;
   text-align: center;
 }
@@ -197,6 +210,7 @@ img {
   font-weight: 600;
   line-height: 48px;
   text-transform: capitalize;
+  padding-top: 1.5rem;
 }
 
 .title p {
@@ -204,7 +218,8 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 24.5px;
-  color: var(--para-color);
+  padding-top: 1.5rem;
+  color: var(--font-color);
   margin: 15px 0 35px 0;
 }
 
@@ -332,6 +347,10 @@ header .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
 }
 
 .dots {
@@ -342,12 +361,11 @@ header .container {
 }
 
 .dot {
-  background-color: #fff;
+  background-color: #d8d8d8;
   height: 10px;
   width: 10px;
   border-radius: 5px;
-  transition-property: width;
-  transition: width 0.5s;
+  transition: all 0.5s;
 }
 
 .dot:hover {
@@ -603,21 +621,160 @@ p.pricing-lists {
 /* pageVideo */
 .pageVideo {
   background-color: var(--my-color);
-  height: 150px;
+}
+
+.pageVideo__bg {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.pageVideo__title {
+  max-width: 850px;
+}
+
+.pageVideo__bgVideo {
+  position: relative;
+}
+
+.pageVideo__bgVideo img {
+  object-fit: cover;
+}
+.pageVideo__bgVideo .play-view {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  position: absolute;
+}
+
+span.video-play-icon {
+  margin: auto;
+  background: #fff;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  animation: ripple 1s linear infinite;
+}
+
+.video-play-icon {
+  color: var(--primary-color);
 }
 /* End pageVideo */
 
-/* timonial */
-.timonial {
-  background-color: var(--my-color);
-  height: 150px;
+/* testimonial */
+.testimonial {
+  background-color: var(--bg-light);
 }
-/* End timonial  */
+
+.testimonial__cont {
+  max-width: 1050px;
+  margin: auto;
+}
+.testimonial__bg {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.testimonial__bg div.bg-dots {
+  position: relative;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  padding-top: 85px;
+}
+
+.testimonial__mes {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  width: 515px;
+}
+
+.testimonial__mes-bg {
+  display: block;
+  margin: 0;
+  padding: 40px 30px;
+  position: relative;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+}
+
+.testimonial__mes-bg blockquote {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+blockquote q {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: var(--font-color);
+}
+
+blockquote q::before {
+  font-size: 50px;
+  color: var(--primary-color);
+  line-height: 0.8;
+  padding-top: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.mes-client {
+  display: flex;
+  text-align: center;
+}
+
+.mes-img {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+  background: var(--bg-color);
+  border-radius: 50%;
+}
+
+.mes-img img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mes-peopl {
+  margin: 0;
+  margin-left: 20px;
+  text-align: left;
+  align-self: center;
+}
+
+.mes-peopl h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.mes-peopl p {
+  color: #777;
+  font-size: 17px;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+}
+
+/* End testimonial  */
 /* bottom  */
 
 .bottom {
   background-color: var(--my-color);
-  height: 150px;
 }
 
 /* End bottom */
@@ -643,18 +800,6 @@ p.pricing-lists {
 
 .txt-center {
   text-align: center;
-}
-
-@keyframes hoverDots {
-  1% {
-    border-radius: 5px;
-  }
-  99% {
-    border-radius: 5px;
-  }
-  100% {
-    border-radius: 50%;
-  }
 }
 
 @keyframes ripple {
