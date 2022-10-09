@@ -30,6 +30,14 @@
   .services__img img {
     width: 90%;
   }
+
+  .ourPlan__pricing-bg {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 5% auto;
+    width: 60%;
+  }
 }
 @media (max-width: 576px) {
   /* container  */

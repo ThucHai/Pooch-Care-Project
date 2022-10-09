@@ -35,10 +35,11 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --textfooter-color: #696969;
 
   /* or any other variables/style */
 }
-[data-theme='dark'] {
+[data-theme="dark"] {
   --my-color: #000;
   --primary-color: #189a46;
   --secondary-color: #f53626;
@@ -52,6 +53,7 @@
   --dropdown-color: #151515;
   --iframe-filter: grayscale(100%);
   --widget-bg: #131617;
+  --textfooter-color: #afafaf;
 }
 
 * {
@@ -84,7 +86,7 @@ h6 {
   margin: 0;
   padding: 0;
   color: var(--heading-color);
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 
@@ -95,7 +97,7 @@ p {
   font-size: 1.2em;
   line-height: 28px;
   color: var(--font-color);
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 /* a  */
 a {
@@ -111,7 +113,7 @@ a:hover {
 a.nav-link:before,
 a.dropdown-item:before {
   position: absolute;
-  content: '';
+  content: "";
   background: var(--primary-color);
   width: 0px;
   height: 1px;
@@ -690,7 +692,6 @@ span.video-play-icon {
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  width: 515px;
 }
 
 .testimonial__mes-bg {
@@ -775,9 +776,125 @@ blockquote q::before {
 
 .bottom {
   background-color: var(--my-color);
+  padding: 100px 0;
+}
+
+.bottom .form-email {
+  max-width: 600px;
+  margin: auto;
+}
+
+.bottom .form-email div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.bottom .mybtn {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.bottom input[type="email"] {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  padding: 0px 20px;
+  height: 60px;
+  flex-basis: 70%;
+  background: #fff;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.bottom input[type="email"]:focus {
+  background: #fff;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+.bottom input.mybtn {
+  margin: 0;
+}
+
+.bottom input.mybtn:hover {
+  color: #fff;
+  background-color: #116e32;
+  border-color: #116e32;
 }
 
 /* End bottom */
+/* footer  */
+
+footer {
+  background-color: #111;
+}
+
+.footer__bg {
+}
+
+.footer__top {
+}
+
+.footer__list ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer__list ul li a,
+.footer__list ul li p {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--textfooter-color);
+  line-height: 28px;
+}
+
+.footer__list ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.footer__main {
+}
+
+.footer__icons {
+  margin-top: 3px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.footer__icons li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.footer__bottom {
+  border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+.footer__bottom a {
+  color: var(--secondary-color);
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.footer__bottom a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+/* End footer  */
 
 /*-- container --*/
 .container {
