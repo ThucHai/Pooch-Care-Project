@@ -36,15 +36,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.min.css"
     />
-
-    <!-- owlCarousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- Animate  -->
     <link
       rel="stylesheet"
@@ -88,7 +79,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link active" href="services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
@@ -121,7 +112,10 @@
                   class="dark-light inline-block w-10 flex"
                   style="width: 150px"
                 >
-                  <i class="gg-sun" style="color: var(--heading-color)"></i>
+                  <i
+                    class="fa-solid fa-sun"
+                    style="color: var(--heading-color); font-size: 1.5rem"
+                  ></i>
                   <span
                     data-toggle-theme="dark"
                     data-act-class="pl-4"
@@ -137,7 +131,10 @@
                     >
                     </span>
                   </span>
-                  <i class="gg-moon" style="color: var(--heading-color)"></i>
+                  <i
+                    class="fa-solid fa-moon"
+                    style="color: var(--heading-color); font-size: 1.5rem"
+                  ></i>
                 </div>
               </li>
             </ul>
@@ -146,6 +143,116 @@
       </div>
     </header>
     <!-- End header  -->
+    <!-- about-breadcrumb     -->
+    <section class="about-breadcrumb">
+      <div class="breadcrumb__bg py-sm-5 py-4">
+        <div class="container py-2 txt-center">
+          <h2 class="">Services</h2>
+          <ul class="mt-2">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="">
+              <span class="fa fa-arrow-right mx-2"></span>
+              Services
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end about-breadcrumb     -->
+    <!-- Information      -->
+    <div class="info py-5">
+      <div class="container">
+        <div class="info__grids row mt-0">
+          <div class="info__img col-lg-6">
+            <a href="#"
+              ><img
+                src="./Assets/img/g1.jpg"
+                class="img-fluid mb-lg-0 mb-4"
+                alt=""
+            /></a>
+          </div>
+          <div class="info_cont col-lg-6 pl-lg-5">
+            <div class="title info__title txt-left">
+              <h5>01</h5>
+              <h2>Dog Walking</h2>
+              <p>
+                Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+                sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+                animi consequatur saepe blanditiis.
+              </p>
+              <a class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="info__grids row flex-row-reverse">
+          <div class="info__img col-lg-6">
+            <a href="#"
+              ><img
+                src="./Assets/img/g2.jpg"
+                class="img-fluid mb-lg-0 mb-4"
+                alt=""
+            /></a>
+          </div>
+          <div class="info_cont col-lg-6 pl-lg-5">
+            <div class="title info__title txt-left">
+              <h5>03</h5>
+              <h2>Dog Training</h2>
+              <p>
+                Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+                sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+                animi consequatur saepe blanditiis.
+              </p>
+              <a class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="info__grids row">
+          <div class="info__img col-lg-6">
+            <a href="#"
+              ><img
+                src="./Assets/img/g3.jpg"
+                class="img-fluid mb-lg-0 mb-4"
+                alt=""
+            /></a>
+          </div>
+          <div class="info_cont col-lg-6 pl-lg-5">
+            <div class="title info__title txt-left">
+              <h5>03</h5>
+              <h2>Dog Boarding</h2>
+              <p>
+                Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+                sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+                animi consequatur saepe blanditiis.
+              </p>
+              <a class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="info__grids row flex-row-reverse">
+          <div class="info__img col-lg-6">
+            <a href="#"
+              ><img
+                src="./Assets/img/g4.jpg"
+                class="img-fluid mb-lg-0 mb-4"
+                alt=""
+            /></a>
+          </div>
+          <div class="info_cont col-lg-6 pl-lg-5">
+            <div class="title info__title txt-left">
+              <h5>04</h5>
+              <h2>Dog Transportation</h2>
+              <p>
+                Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+                sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+                animi consequatur saepe blanditiis.
+              </p>
+              <a class="read-more">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Information      -->
     <!-- footer  -->
     <footer class="footer">
       <div class="footer__bg">

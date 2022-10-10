@@ -15,7 +15,7 @@
 @media (max-width: 992px) {
   /* container  */
   .container {
-    max-width: 960px;
+    max-width: 720px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -56,6 +56,16 @@
   .dropdown-item {
     font-weight: bold;
   }
+
+  .info__grids {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
+
+  .info__img a {
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -74,6 +84,14 @@
     gap: 50px;
     margin: 5% auto;
     width: 60%;
+  }
+
+  .bottom input.mybtn {
+    margin-top: 24px;
+  }
+
+  .bottom .form-email div {
+    flex-direction: column;
   }
 }
 @media (max-width: 576px) {
