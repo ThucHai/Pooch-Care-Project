@@ -130,6 +130,7 @@ a.read-more {
   margin-top: 20px;
   display: inline-block;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 /* img  */

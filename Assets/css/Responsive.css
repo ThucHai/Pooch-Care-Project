@@ -71,6 +71,9 @@
     padding-bottom: 40px;
     align-items: center;
   }
+  .info__title {
+    padding: 0 24px;
+  }
 
   .info__img a {
     margin: auto;
@@ -87,6 +90,10 @@
   /* container  */
   .container {
     max-width: 100%;
+  }
+
+  .info__title {
+    padding: 0;
   }
 
   .services__img img {
