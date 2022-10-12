@@ -1153,9 +1153,6 @@ li.meta-item {
   color: #888;
 }
 
-.info-block__num-of-pages {
-}
-
 ul.num-of-pages li {
   display: inline-block;
   margin: 0 5px;
@@ -1175,6 +1172,8 @@ ul.num-of-pages li {
 .pagenumbers:hover {
   color: var(--primary-color);
 }
+
+/* landing single page */
 
 /* End child page */
 @keyframes ripple {
