@@ -129,4 +129,15 @@
     width: 85%;
     margin: auto;
   }
+  .cont__text-text > div.blockquote > q {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .cont__reply-form {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+  .cont__reply-form textarea {
+    grid-column: 1;
+  }
 }
