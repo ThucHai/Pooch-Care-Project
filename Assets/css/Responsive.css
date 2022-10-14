@@ -145,4 +145,7 @@
   .cont__reply-form textarea {
     grid-column: 1;
   }
+  .cont__reply-form input.span2 {
+    grid-column: 1 / 2;
+  }
 }
